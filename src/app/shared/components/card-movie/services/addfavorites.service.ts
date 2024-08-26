@@ -14,6 +14,6 @@ export class AddfavoritesService {
   }
 
   deletefavorites(media: any){
-    return this.http.post(`${this.apiUrl2}/Delete`,media); /
+    return this.http.post(`${this.apiUrl2}/Delete`,media); 
   }
 }

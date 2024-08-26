@@ -7,7 +7,8 @@ export const sessionGuard: CanActivateFn = (route, state) => {
   const router = inject(Router);
   try {
 
-    const token: boolean = cookie.check('token'); 
+    const token: boolean = cookie.check('token');  
+    if(token){
       return true
     }else{
       router.navigate(['/','auth']);
