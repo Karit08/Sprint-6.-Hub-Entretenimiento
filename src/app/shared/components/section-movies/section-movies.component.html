@@ -1,0 +1,6 @@
+<h1 class="text-center text-[#ffffff] text-4xl my-16 mx-4 filter font-BaskervvilleSC ">{{title}}</h1>
+<div class="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 md:mx-20 lg:mx-32 xl:mx-52 mx-6">
+    <li *ngFor="let movies of datas" class="text-slate-50 list-none">
+        <app-card-movie [movie]="movies"></app-card-movie>
+    </li>
+</div>

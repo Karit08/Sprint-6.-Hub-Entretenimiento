@@ -1,0 +1,111 @@
+{
+    "datas": [
+        {
+            "id": 1,
+            "title": "Intensamente 2",
+            "year": 2010,
+            "genre": "comedia",
+            "time": "104min",
+            "description": "Una familia con el reto de arreglar una casa dedadad adasd ad ad a dadasfasdad sad ad sa d a",
+            "img": "assets/img/intensamente_2.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Transformers",
+            "year": 2024,
+            "genre": "accion",
+            "time": "104min",
+            "description": "Transformers: el despertar de las bestias (en inglés: Transformers: Rise of the Beasts) es una película de acción y ciencia ficción estadounidense basada en la línea de juguetes de Transformers de Hasbro y principalmente influenciada por el argumento de la serie animada Beast Wars. Es la secuela de Bumblebee (2018) y la segunda entrega del reinicio de la saga de películas de Transformers.La película se enfoca en Optimus Prime durante 1994 en Brooklyn, Nueva York, 7 años después de los acontecimientos de Bumblebee (2018), partes de Perú, siendo este último cuenta con muchas referencias locales del país.4​5​ ",
+            "img": "assets/img/transformers.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Una casa patas arriba",
+            "year": 2024,
+            "genre": "comedia",
+            "time": "104min",
+            "description": "Emociones en conflicto",
+            "img": "assets/img/casa_patas_arriba.jpg"
+        }
+        ,
+        {
+            "id": 4,
+            "title": "Bad Boys - For life",
+            "year": 2024,
+            "genre": "accion",
+            "time": "104min",
+            "description": "Miami vuelve a ser el escenario de esta nueva entrega de Dos policías rebeldes. Allí, los detectives Mike Lowrey y Marcus Burnett vuelven a hacer de las suyas, y su nueva aventura volverá a estar plagada de acción, bandas, persecuciones de coches y explosiones.",
+            "img": "assets/img/Bad_Boys.jpg"
+        }
+        ,
+        {
+            "id": 5,
+            "title": "Demons Slayer",
+            "year": 2024,
+            "genre": "accion",
+            "time": "104min",
+            "description": "chicos malos",
+            "img": "assets/img/kimetsu.jpg"
+        }
+        ,
+        {
+            "id": 6,
+            "title": "Rapidos y furiosos",
+            "year": 2024,
+            "genre": "accion",
+            "time": "104min",
+            "description": "chicos malos",
+            "img": "assets/img/rapidos_furiosos.jpg"
+        }
+        ,
+        {
+            "id": 7,
+            "title": "Little Man",
+            "year": 2024,
+            "genre": "comedia",
+            "time": "104min",
+            "description": "chicos malos",
+            "img": "assets/img/little_man.jpg"
+        }
+        ,
+        {
+            "id": 8,
+            "title": "Donde estan las rubias",
+            "year": 2024,
+            "genre": "comedia",
+            "time": "104min",
+            "description": "chicos malos",
+            "img": "assets/img/donde_rubias.webp"
+        }
+        ,
+        {
+            "id": 9,
+            "title": "Wrong missy",
+            "year": 2024,
+            "genre": "comedia",
+            "time": "104min",
+            "description": "chicos malos",
+            "img": "assets/img/wrong_missy.jpg"
+        }
+        ,
+        {
+            "id": 10,
+            "title": "chuky",
+            "year": 2024,
+            "genre": "terror",
+            "time": "104min",
+            "description": "chicos malos",
+            "img": "assets/img/chuky.jpg"
+        }
+        ,
+        {
+            "id": 12,
+            "title": "El conjuro",
+            "year": 2024,
+            "genre": "terror",
+            "time": "104min",
+            "description": "chicos malos",
+            "img": "assets/img/conjuro.webp"
+        }
+    ]
+}

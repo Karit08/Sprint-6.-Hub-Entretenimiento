@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "command": "dotnet",
+      "type": "shell",
+      "args": [
+        "build",
+        "${workspaceFolder}/Server_Asp.net/ServerAsp/ServerAsp.csproj" 
+      ],
+      "problemMatcher": "$msCompile",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "npm: start",
+      "type": "npm",
+      "script": "start",
+      "isBackground": true,
+      "problemMatcher": [
+        "$tsc"
+      ]
+    },
+    {
+      "label": "npm: test",
+      "type": "npm",
+      "script": "test",
+      "isBackground": true,
+      "problemMatcher": [
+        "$tsc"
+      ]
+    }
+  ]
+}

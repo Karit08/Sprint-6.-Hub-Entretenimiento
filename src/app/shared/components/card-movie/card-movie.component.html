@@ -1,0 +1,89 @@
+   
+    <div *ngIf="menu" class="bg-gray-600/50 fixed top-0 left-0 right-0 bottom-0 backdrop-blur-sm transition-opacity duration-300 ease-in-out"
+        (click)="onclickmenu()">
+    </div>
+
+    <div class="flex justify-center items-center">
+        <div *ngIf="menu" class="fixed inset-0 flex items-start justify-center bg-[#121213] p-2 overflow-y-auto mt-10 sm:mx-[100px] md:mb-[50px] lg:items-center lg:mt-[220px] lg:mb-[250px] lg:mx-[80px] xl:mx-[200px] 3xl:mx-[300px] 4xl:mx-[350px] rounded-md">
+            <div class="flex flex-col lg:flex-row lg:gap-x-4 bg-[#121213] p-2 rounded max-w-full max-h-full sm:mx-10 w-full">
+
+                <div class="flex flex-shrink-0 justify-center items-start overflow-hidden">
+                    <img class="object-cover w-[400px] h-[350px]" [src]="movie.URL_img">
+                </div>
+
+                <div class="flex flex-col flex-grow w-full mt-4 sm:mt-0 sm:ml-4">
+                    <div class="gap-x-2">
+                        <div class="flex items-center justify-center overflow-hidden">
+                            <h1 class="font-BaskervvilleSC text-4xl overflow-hidden overflow-ellipsis whitespace-nowrap">{{ movie.Title }}</h1>
+                        </div>
+                    </div>
+                    <div class="flex justify-between px-10 pt-4 pb-2">
+                        <div class="flex gap-x-1">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"
+                                viewBox="0 0 24 24"  fill="none"  stroke="currentColor"
+                                stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-category">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M4 4h6v6h-6z" /><path d="M14 4h6v6h-6z" />
+                                <path d="M4 14h6v6h-6z" />
+                                <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                            </svg>
+                            <h1 class=""> {{movie.Category}} </h1>
+                        </div>
+
+                        <div class="flex gap-1">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"
+                                fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-clock-hour-3">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-5 2.66a1 1 0 0 0 -1 1v5a1 1 0 0 0 1 1h3.5a1 1 0 0 0 0 -2h-2.5v-4a1 1 0 0 0 -.883 -.993z" />
+                            </svg>
+                            <h1 class=""> {{movie.M_Length || movie.S_Length}} </h1>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-x-2 mt-4">
+                        <h1 class="text-center text-lg">Descripción</h1>
+                        <h1 class="font-BaskervvilleSC text-justify text-lg  line-clamp-5">{{movie.M_Description || movie.S_Description}}</h1>
+                    </div>
+
+                    <div class="flex justify-between items-center mx-2 p-4 gap-x-14 sm:gap-x-20 md:gap-x-30 lg:gap-x-20 2xl:justify-center">
+                        <button class="flex justify-center gap-x-1 bg-red-600 w-full py-2 rounded-md 2xl:w-[200px] ">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"
+                                viewBox="0 0 24 24"  fill="none"  stroke="currentColor"
+                                stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-player-play">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M7 4v16l13 -8z" />
+                            </svg>
+                        </button>
+                        <button  *ngIf="!movie.ID_Favorites" (click)="addTofavorites()" class="flex justify-center gap-x-1 bg-blue-600 w-full py-2 rounded-md 2xl:w-[200px]">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"
+                                viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"
+                                stroke-linecap="round"  stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-heart">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                            </svg>
+                        </button>
+                        <button *ngIf="movie.ID_Favorites" (click)="deletefavorites()" class="flex justify-center gap-x-1 bg-blue-600 w-full py-2 rounded-md 2xl:w-[200px]">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"
+                                fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"
+                                stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-heart-off">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M3 3l18 18" />
+                                <path d="M19.5 12.572l-1.5 1.428m-2 2l-4 4l-7.5 -7.428a5 5 0 0 1 -1.288 -5.068a4.976 4.976 0 0 1 1.788 -2.504m3 -1c1.56 0 3.05 .727 4 2a5 5 0 1 1 7.5 6.572" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón de la tarjeta de película -->
+    <button class="w-full h-full aspect-w-1 aspect-h-1" (click)="onclickmenu()">
+        <img class="object-cover w-full h-full" [src]="movie.URL_img">
+    </button>
+
+
+

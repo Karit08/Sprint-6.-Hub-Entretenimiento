@@ -1,0 +1,8 @@
+node_modules
+.git
+.vscode
+.angular
+.DS_Store
+dist
+Server
+ServerAsp.net
