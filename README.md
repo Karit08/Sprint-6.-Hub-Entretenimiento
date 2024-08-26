@@ -41,7 +41,6 @@ El Sprint muestra una plataforma de entretenimiento que ofrece un extenso catál
 ![HCode-coverage](./assets/Code-Coverage-Testing.PNG)
 ![Home image](./assets/Categorias-menu-Empire-movies.PNG)
 ![Home image](./assets/Inicio-Empire-movies.PNG)
-![Detalle de movie](./assets//Tarjeta-Pelicula-Empire-Movies.PNG)
 ![Inicio sesión](./assets/New_Drop_Dow.PNG)
 
 
